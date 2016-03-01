@@ -1,0 +1,4 @@
+@mixin fade($time) {
+    -webkit-transition-duration: $time;
+    transition-duration: $time;
+}

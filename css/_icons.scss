@@ -1,0 +1,83 @@
+#logo {
+    width: 150px;
+    height: 75px;
+    background: url('../images/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -10px;
+}
+
+#apple, #android, #windows {
+    width: 54px;
+    height: 53px;
+    display: inline-block;
+    opacity: .6;
+}
+
+#apple { background: url('../images/bsprit.png') 0 0; }
+#android { background: url('../images/bsprit.png') -68px 0; }
+#windows { background: url('../images/bsprit.png') -136px 0; }
+
+#apple:hover, #android:hover, #windows:hover {
+    opacity: .8;
+    @include fade(.3s);
+}
+
+#monitor, #target, #photo, #palette, #user, #settings {
+    width: 52px;
+    height: 53px;
+    display: inline-block;
+}
+
+#monitor { background: url('../images/bsprit.png') 0 -55px; }
+#target { background: url('../images/bsprit.png') -50px -55px; }
+#photo { background: url('../images/bsprit.png') -100px -55px; }
+#palette { background: url('../images/bsprit.png') -150px -55px; }
+#user { background: url('../images/bsprit.png') -204px -55px; }
+#settings { background: url('../images/bsprit.png') -255px -55px; }
+
+#hand {
+    height: 320px;
+    margin-left: 30%;
+    position: absolute;
+}
+
+#social li { display: inline-block; }
+
+#twitter, #facebook, #pinterest, #linkedin, #youtube {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#twitter {
+    background: url('../images/bsprit.png') 1px -135px;
+    background-color: map-get($colors, graylight);
+ }
+
+#facebook {
+    background: url('../images/bsprit.png') -43px -135px;
+    background-color: map-get($colors, graylight);
+}
+
+#pinterest {
+    background: url('../images/bsprit.png') -87px -135px;
+    background-color: map-get($colors, graylight);
+}
+
+#linkedin {
+    background: url('../images/bsprit.png') -175px -135px;
+    background-color: map-get($colors, graylight);
+}
+
+#youtube {
+    background: url('../images/bsprit.png') -219px -133px;
+    background-color: map-get($colors, graylight);
+}
+
+#twitter:hover, #facebook:hover, #pinterest:hover, #linkedin:hover, #youtube:hover {
+    background-color: map-get($colors, heaven);
+    @include fade(.3s);
+}

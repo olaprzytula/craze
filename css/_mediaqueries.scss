@@ -1,0 +1,46 @@
+@media screen and (max-width: 991px) {
+
+    .label-narrow { display: block; }
+
+    .label-narrow, .label-wide { margin-top: -23px; }
+
+    #characteristics-3 { margin-top: 5%; }
+
+    #characteristics-2, #characteristics-4, #characteristics-5 { border: none; }
+
+    #characteristics-3, #characteristics-5 { border-right: 1px solid map-get($colors, graylight); }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .label-narrow, .label-wide { display: none; }
+
+    #characteristics-1, #characteristics-2, #characteristics-3,
+    #characteristics-4, #characteristics-5 {
+        border-right: none;
+        border-bottom: 1px solid map-get($colors, graylight);
+        padding-bottom: 5%;
+    }
+
+    #characteristics-6 { border-right: none; }
+
+}
+
+@media screen and (max-width: 595px) {
+    #footer li { margin: 10px 5px; }
+}
+
+@media screen and (max-width: 509px) {
+    #footer li {
+        font-size: 10px;
+        margin: 10px 2px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    #footer li {
+        font-size: 8px;
+        margin: 10px 1px;
+    }
+}

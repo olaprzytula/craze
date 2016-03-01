@@ -1,0 +1,96 @@
+body {
+    font-family: OpenSans;
+    font-size: 12px;
+    text-align: center;
+    color: map-get($colors, graymiddle);
+}
+
+.container-fluid { padding: 5% 15%; }
+
+footer { padding: 1% 15% !important; }
+
+h1, h2, h3, h4 {
+    font-family: Trebuchet;
+    color: map-get($colors, graydark);
+}
+h1 { font-size: 30px; }
+h2 {
+    font-size: 18px;
+    color: white;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+h3 { font-size: 18px; }
+h4 {
+    font-size: 16px;
+    font-family: Desyrel;
+}
+
+header {
+    background: url('../images/bg.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    text-align: left;
+    overflow: hidden;
+}
+
+span { color: map-get($colors, graydark); }
+
+[id^=characteristics] {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#characteristics-1, #characteristics-2, #characteristics-4, #characteristics-5 {
+    border-right: 1px solid map-get($colors, graylight);
+}
+
+.label-wide, .label-narrow {
+    width: 90%;
+    height: 1px;
+    background-color: map-get($colors, graylight);
+    display: block;
+    margin: -28px auto 15px auto;
+}
+.label-narrow { display: none; }
+
+#characteristics-4, #characteristics-5, #characteristics-6 {
+    margin-top: 5%;
+}
+
+#table-test { display: flex; }
+
+#iframe-container { align-self: center; }
+
+iframe {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.gray { background-color: map-get($colors, graylight); }
+.align-left { text-align: left; }
+.description { margin-top: 10px; margin-bottom: 30px; }
+
+.indent { text-indent: 10px; }
+.indent:hover {
+    cursor: pointer;
+    color: map-get($colors, heaven);
+    @include fade(.3s);
+}
+
+#footer li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#footer a:link, #footer a:visited {
+    text-decoration: none;
+    color: map-get($colors, graymiddle);
+}
+
+#footer a:active, #footer a:hover {
+    text-decoration: none;
+    color: map-get($colors, heaven);
+    @include fade(.3s);
+}

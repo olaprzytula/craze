@@ -1,0 +1,27 @@
+.carousel-indicators {
+    position: relative;
+    margin-top: 50px;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border: 2px solid map-get($colors, heaven);
+    background-color: white;
+    margin: 5px;
+}
+
+.carousel-indicators li:hover {
+    cursor: pointer;
+    background-color: map-get($colors, heaven);
+    @include fade(.3s);
+}
+
+.carousel-indicators li.active {
+    width: 15px;
+    height: 15px;
+    background-color: map-get($colors, heaven);
+    margin: 5px;
+}
+
+.next, .prev, .right, .left { text-align: center; }

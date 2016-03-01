@@ -1,0 +1,76 @@
+table {
+    line-height: 40px;
+    border: 1px solid map-get($colors, graylight);
+}
+
+th {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+td {
+    background-color: white;
+    border: 1px solid map-get($colors, graylight);
+}
+
+.wide {
+    padding: 0;
+}
+
+.price {
+    font-family: Bebas;
+    font-size: 30px;
+    color: map-get($colors, graydark);
+    line-height: 70px;
+    border-top: none;
+}
+
+.blue { background-color: map-get($colors, heaven); }
+
+td.blue {
+    height: 70px;
+    padding-top: 20px !important;
+}
+
+.feature:hover {
+    background-color: map-get($colors, graylight);
+    color: map-get($colors, heaven);
+    @include fade(.3s);
+}
+
+.button {
+    margin: 0 auto;
+    height: 25px;
+    width: 90px;
+    background-color: map-get($colors, heavendark);
+    color: white;
+    line-height: 25px;
+}
+
+.button:hover {
+    background-color: darken(map-get($colors, heavendark), 5);
+    cursor: pointer;
+    @import "mixins";
+}
+
+// Hover Grow by Ian Lunn https://github.com/IanLunn/Hover
+.hvr-grow {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  @include fade(.3s);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  position: relative;
+  z-index: 2;
+}
